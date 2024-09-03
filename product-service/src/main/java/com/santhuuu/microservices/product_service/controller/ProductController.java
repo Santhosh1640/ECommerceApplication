@@ -18,11 +18,13 @@ public class ProductController {
     private ProductService productService;
 
     @PostMapping
+    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<ProductResponse> createProduct(@RequestBody ProductRequest productRequest) {
         return ResponseEntity.status(HttpStatus.CREATED).body(productService.createProduct(productRequest));
     }
 
     @GetMapping
+    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<List<ProductResponse>> getProducts() {
         return ResponseEntity.status(HttpStatus.OK).body(productService.getProducts());
     }
