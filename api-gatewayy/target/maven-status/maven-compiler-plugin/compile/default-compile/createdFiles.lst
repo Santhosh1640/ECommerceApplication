@@ -1,0 +1,3 @@
+com\santhuuu\microservices\api_gatewayy\ApiGatewayyApplication.class
+com\santhuuu\microservices\api_gatewayy\routes\Routes.class
+com\santhuuu\microservices\api_gatewayy\config\SecurityConfig.class
